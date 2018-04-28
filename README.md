@@ -37,6 +37,8 @@ docker run --rm -ti -v /var/run/docker.sock:/var/run/docker.sock --entrypoint /u
 
 More details about the arguments to `/usr/local/bin/crocker` can be found on the [crocker github page](https://github.com/APNIC-net/crocker/).
 
+For more details on the format of the cronjob time expression, see the [vixiecron manpage(5)](https://linux.die.net/man/5/crontab).
+
 ## Troubleshooting
 You need to bind mount the docker socket inside the *dockerjob* container, otherwise you will see the following when trying to run docker commands:
 
