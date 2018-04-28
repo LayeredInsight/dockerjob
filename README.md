@@ -1,4 +1,5 @@
 # dockerjob
+[![Docker Pulls](https://img.shields.io/docker/pulls/layeredinsight/dockerjob.svg?style=plastic)](https://hub.docker.com/r/layeredinsight/dockerjob/)
 *dockerjob* arose from a need to be able to easily schedule backup
 jobs in our VM-image-based software distributions. So we tracked down [Crocker](https://github.com/APNIC-net/crocker/) - the cool, light-weight cron-like scheduler desgined for containers, and paired it with [Docker's](https://docker.com)...[docker](https://hub.docker.com/_/docker/).
 
