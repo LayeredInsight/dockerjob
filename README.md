@@ -25,7 +25,7 @@ docker run --rm -ti -v /var/run/docker.sock:/var/run/docker.sock --entrypoint /u
         - type: volume
           source: /data/mongo-data
           target: /data/db
-    mongodb:
+    mongo-backup:
       image: layeredinsight/dockerjob:1.0
       entrypoint: /usr/local/bin/crocker @daily docker run --rm -ti -v /data/mongo-backups:/data/backups mongo:3.2.4 mongodump --gzip -o /data/backups/`date +%Y%m%d` --host=mongodb
       volumes:
